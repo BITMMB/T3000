@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: 'TTLakes-Bold';
-    src: url('/fonts/TTLakes-Bold.eot');
+    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot');
     src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-    url('/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/TTLakes-Bold.woff') format('woff'),
-    url('/fonts/TTLakes-Bold.ttf') format('truetype');
+    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.woff') format('woff'),
+    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/fonts/TTLakes-Regular.eot');
+    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-    url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/TTLakes-Regular.woff') format('woff'),
-    url('/fonts/TTLakes-Regular.ttf') format('truetype');
+    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.woff') format('woff'),
+    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -87,7 +87,7 @@ p {margin: 0}
 
 .button__menu{
     display: flex;
-    background-image:url("/header/menu.svg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/menu.svg?raw=true");
     background-repeat:no-repeat;
     width: 18px;
     height: 16px;
@@ -95,7 +95,7 @@ p {margin: 0}
     }
 .button__keys{
     display: flex;
-    background-image:url("/header/keys.svg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/keys.svg?raw=true");
     background-repeat:no-repeat;
     width: 20px;
     height: 20px;
@@ -104,7 +104,7 @@ p {margin: 0}
 
 .button__search{
      display: flex;
-     background-image:url("/header/search.svg");
+     background-image:url("https://github.com/BITMMB/T3000/blob/master/header/search.svg?raw=true");
      background-repeat:no-repeat;
      width: 16px;
      height: 20px;
@@ -112,7 +112,7 @@ p {margin: 0}
  }
 .button__phone{
     display: flex;
-    background-image:url("/header/phone.svg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/phone.svg?raw=true");
     background-repeat:no-repeat;
     width: 18px;
     height: 19px;
@@ -120,7 +120,7 @@ p {margin: 0}
 }
 .button__text{
     display: flex;
-    background-image:url("/header/text.svg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/text.svg?raw=true");
     background-repeat:no-repeat;
     width: 20px;
     height: 20px;
@@ -129,7 +129,7 @@ p {margin: 0}
 }
 .button__contacts{
     display: flex;
-    background-image:url("/header/contacts.svg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/contacts.svg?raw=true");
     background-repeat:no-repeat;
     width: 20px;
     height: 20px;
@@ -171,7 +171,7 @@ main{
     display: block;
     width: 4px;
     height: 40px;
-    background-image:url("/img/highlight.svg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/highlight.svg?raw=true");
     background-repeat: no-repeat;
 }
 .nav-scroller__items {
@@ -228,7 +228,7 @@ main{
     display: block;
     width: 8px;
     height: 11px;
-    background-image:url("/img/arrows.svg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/arrows.svg?raw=true");
     background-size: 8px 11px;
     background-repeat: no-repeat;
 }
@@ -243,7 +243,7 @@ main{
     overflow: hidden;
 }
 .img{
-    background-image:url("/img/cps.jpg");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/cps.jpg?raw=true");
     width: 320px;
     height: 230px;
     background-repeat: no-repeat;
@@ -361,6 +361,6 @@ main{
         border-radius: 10px;
     }
     .h1::before{
-        background-image:url("/img/highlight_desktop.svg");
+        background-image:url("https://github.com/BITMMB/T3000/blob/master/img/highlight_desktop.svg?raw=true");
     }
 }

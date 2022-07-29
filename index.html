@@ -9,94 +9,109 @@
   <meta name="viewport" content="width=device-width">
   <title>cps</title>
 </head>
-<body class="body">
+<body>
+<div class="body">
 <nav class="header">
   <div class="left-menu">
-  <div class="button">
-    <div class="button__menu"></div>
-  </div>
+  <button class="button">
+    <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/menu.svg?raw=true" alt="Боковое меню">
+<!--    <div class="button__menu"></div>-->
+  </button>
   <div class="header__border1"></div>
   <div class="header__logo"></div>
   </div>
   <div class="medium-menu">
-    <div class="button">
-      <div class="button__phone"></div>
-    </div>
-    <div class="button">
-      <div class="button__text"></div>
-    </div>
-    <div class="button">
-      <div class="button__contacts"></div>
-    </div>
+    <button class="button">
+      <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/phone.svg?raw=true" alt="Позвонить">
+<!--      <div class="button__phone"></div>-->
+    </button>
+    <button class="button">
+      <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/text.svg?raw=true" alt="Отправить сообщение">
+<!--      <div class="button__text"></div>-->
+    </button>
+    <button class="button">
+      <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/contacts.svg?raw=true" alt="Контакты">
+<!--      <div class="button__contacts"></div>-->
+    </button>
   </div>
   <div class="header__border2"></div>
-  <div class="button">
-    <div class="button__keys"></div>
-  </div>
-  <div class="button">
-    <div class="button__search"></div>
-  </div>
-  <div class="desktop-menu">
-    <div class="button">
-      <div class="button__keys"></div>
-    </div>
-    <div class="button">
-      <div class="button__search"></div>
-    </div>
-  </div>
+  <button class="button">
+    <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/keys.svg?raw=true" alt="Оставить заявку">
+<!--    <div class="button__keys"></div>-->
+  </button>
+  <button class="button">
+    <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/search.svg?raw=true" alt="Статус ремонта">
+<!--    <div class="button__search"></div>-->
+  </button>
+<!--  <div class="desktop-menu">-->
+
+<!--   <button class="desktop-menu-left"></button>-->
+<!--&lt;!&ndash;    <div class="button">&ndash;&gt;-->
+<!--      <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/keys.svg?raw=true">-->
+<!--&lt;!&ndash;      <div class="button__keys"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--      </button>-->
+
+<!--    <button class="desktop-menu-right">-->
+<!--&lt;!&ndash;    <div class="button">&ndash;&gt;-->
+<!--      <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/search.svg?raw=true">-->
+<!--&lt;!&ndash;      <div class="button__search"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--    </button>-->
+
+<!--  </div>-->
 </nav>
 <main class="main">
 <div class="header-desktop">
+  <h1 class="h1">Услуги и сервисы</h1>
   <nav class="desktop-menu">
-    <div class="desktop-menu-left">
-    <div class="desktop-menu--text">Оставить заявку</div>
-    <div class="button">
-      <div class="button__keys button__keys-desktop"></div>
+    <div class="desktop-menu-block">
+    <button class="desktop-menu--text">Оставить заявку
+    </button>
+     <button class="button">
+      <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/keys.svg?raw=true" alt="Оставить заявку">
+    </button>
     </div>
-    </div>
-    <div class="desktop-menu-right">
-    <div class="desktop-menu--text">Оставить заявку</div>
-    <div class="button">
-      <div class="button__search button__search-desktop"></div>
-    </div>
+    <div class="desktop-menu-block">
+    <button class="desktop-menu--text">Статус ремонта
+    </button>
+    <button class="button">
+      <img class="button__icon" src="https://github.com/BITMMB/T3000/blob/master/img/search.svg?raw=true" alt="Статус ремонта">
+    </button>
     </div>
   </nav>
-<h1 class="h1">Услуги и сервисы
-</h1>
+
 </div>
-  <div class="nav-scroller">
-    <nav class="nav-scroller__items">
-      <a class="nav-scroller__item" href="#">Ремонтируемые бренды</a>
-      <a class="nav-scroller__item" href="#">Ремонтируемые устройства</a>
-      <a class="nav-scroller__item" href="#">Цены на услуги</a>
-      <a class="nav-scroller__item" href="#">Адреса сервисных центров</a>
-      <a class="nav-scroller__item" href="#">Специальные цены</a>
-      <a class="nav-scroller__item" href="#">Отзывы</a>
-     </nav>
-  </div>
+  <nav class="nav-scroller">
+    <ul class="nav-scroller__items">
+      <li class="nav-scroller__item"><a class="nav-scroller__a" href="#">Ремонтируемые бренды</a></li>
+      <li class="nav-scroller__item"><a class="nav-scroller__a" href="#">Ремонтируемые устройства</a></li>
+      <li class="nav-scroller__item"><a class="nav-scroller__a" href="#">Цены на услуги</a></li>
+      <li class="nav-scroller__item"><a class="nav-scroller__a" href="#">Адреса сервисных центров</a></li>
+      <li class="nav-scroller__item"><a class="nav-scroller__a" href="#">Специальные цены<></a></li>
+      <li class="nav-scroller__item"><a class="nav-scroller__a" href="#">Отзывы</a></li>
+     </ul>
+  </nav>
 
   <div class="content">
     <div class="content__left">
   <section class="content__text">
-    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-    Только у нас вы можете отремонтировать свой ноутбук Dell с    официальной гарантией производителя.</p>
-    <br>
-    <br>
-    <p>Мы успешно работаем с 1992 года и заслужили
+    <div>Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</div>
+    <div>Мы успешно работаем с 1992 года и заслужили
     репутацию надежного партнера, что подтверждает
     большое количество постоянных клиентов.
     Мы гордимся тем, что к нам обращаются по рекомендациям и,
-    в свою очередь, советуют нас родным и близким.</p>
-
+    в свою очередь, советуют нас родным и близким.</div>
   </section>
 
   <button class="arrow">
     Читать далее
   </button>
     </div>
-  <div class="img">
-  </div>
+  <img class="img" src="https://github.com/BITMMB/T3000/blob/master/img/cps.jpg?raw=true" alt="Логотип cps">
   </div>
 </main>
+</div>
 </body>
 </html>

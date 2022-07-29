@@ -52,20 +52,18 @@
     font-weight: 500;
     font-style: normal;
 }
-
-
-.body {
+body{
     font-family: 'TT Lakes', "Arial", sans-serif;
+    background-color: #F8F8F8;
+}
+.body {
     display: flex;
     margin: auto;
     flex-direction:column;
     width: 320px;
     height: 597px;
     box-sizing:  border-box;
-    background-color: #F8F8F8;
-}
-
-p {margin: 0}
+    }
 
 .header{
     background-color: white;
@@ -80,25 +78,46 @@ p {margin: 0}
     display: flex;
 }
 
-.header__border2{
-    height: 32px;
-    width: 2px;
-    background-color: #EAEAEA;
-}
-.header__border1{
-    height: 32px;
-    width: 2px;
-    background-color: #EAEAEA;
-    margin-right: 20px;
-    display: none;
+/*.header__border2{*/
+/*    height: 32px;*/
+/*    width: 2px;*/
+/*    background-color: #EAEAEA;*/
+/*}*/
+/*.header__border1{*/
+/*    height: 32px;*/
+/*    width: 2px;*/
+/*    background-color: #EAEAEA;*/
+/*    margin-right: 20px;*/
+/*    display: none;*/
+/*}*/
 
-}
+/*.button__keys::before{*/
+/*    content: " ";*/
+/*    position: relative;*/
+/*    left:1px;*/
+/*    right: 0;*/
+/*    margin-right: 14px;*/
+/*    display: block;*/
+/*    width: 4px;*/
+/*    height: 40px;*/
+/*    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/divider.svg?raw=true");*/
+/*    background-repeat: no-repeat;*/
+/*}*/
 
 .header__logo{
     background-image:url("https://github.com/BITMMB/T3000/blob/master/img/logo.svg?raw=true");
     width: 98px;
     height: 51px;
     margin-left: 20px;
+
+}
+
+.header__logo::after{
+    content: " ";
+    position: relative;
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/border.svg?raw=true");
+    background-repeat: no-repeat;
+
 
 }
 
@@ -109,72 +128,77 @@ p {margin: 0}
     display: flex;
     align-items: center;
 }
-
+button{cursor: pointer;}
 .button{
     display: flex;
     background-color: #FF3E79;
     border-radius: 20px;
     width: 40px;
     height: 40px;
-    align-items:center;
-}
-
-.button__menu{
-    display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/menu.svg?raw=true");
-    background-repeat:no-repeat;
-    width: 18px;
-    height: 16px;
-    margin: auto;
-    }
-.button__keys{
-    display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/keys.svg?raw=true");
-    background-repeat:no-repeat;
-    width: 20px;
-    height: 20px;
-    margin: auto;
-}
-
-.button__search{
-     display: flex;
-     background-image:url("https://github.com/BITMMB/T3000/blob/master/img/search.svg?raw=true");
-     background-repeat:no-repeat;
-     width: 16px;
-     height: 20px;
-     margin: auto;
- }
-.button__phone{
-    display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/phone.svg?raw=true");
-    background-repeat:no-repeat;
-    width: 18px;
-    height: 19px;
-    margin: auto;
-}
-.button__text{
-    display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/text.svg?raw=true");
-    background-repeat:no-repeat;
-    width: 20px;
-    height: 20px;
-    margin: auto;
+    /*align-items:center;*/
+    border-width: 0;
+    /*padding-left: ;*/
 
 }
-.button__contacts{
-    display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/contacts.svg?raw=true");
-    background-repeat:no-repeat;
-    width: 20px;
-    height: 20px;
-    margin: auto;
+.button__icon{
+    margin: auto
 }
+
+/*button__menu{*/
+/*    display: flex;*/
+/*    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/menu.svg?raw=true");*/
+/*    background-repeat:no-repeat;*/
+/*    width: 18px;*/
+/*    height: 16px;*/
+/*    margin: auto;*/
+/*    }*/
+/*button__keys{*/
+/*    display: flex;*/
+/*    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/keys.svg?raw=true");*/
+/*    background-repeat:no-repeat;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.button__search{*/
+/*     display: flex;*/
+/*     background-image:url("https://github.com/BITMMB/T3000/blob/master/img/search.svg?raw=true");*/
+/*     background-repeat:no-repeat;*/
+/*     width: 16px;*/
+/*     height: 20px;*/
+/*     margin: auto;*/
+/* }*/
+/*.button__phone{*/
+/*    display: flex;*/
+/*    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/phone.svg?raw=true");*/
+/*    background-repeat:no-repeat;*/
+/*    width: 18px;*/
+/*    height: 19px;*/
+/*    margin: auto;*/
+/*}*/
+/*.button__text{*/
+/*    display: flex;*/
+/*    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/text.svg?raw=true");*/
+/*    background-repeat:no-repeat;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    margin: auto;*/
+
+/*}*/
+/*.button__contacts{*/
+/*    display: flex;*/
+/*    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/contacts.svg?raw=true");*/
+/*    background-repeat:no-repeat;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    margin: auto;*/
+/*}*/
 .desktop-menu{
     display: none;
 }
 main{
     background-color: #F8F8F8;
-    height:509px;
     width: 100%;
     display:flex;
     flex-direction:column;
@@ -191,7 +215,6 @@ main{
     font-family: "TT Lakes", "Arial", sans-serif;
     font-weight: 700;
     margin-bottom: 0;
-    margin-top: 24px;
 }
 
 .h1::before{
@@ -222,6 +245,12 @@ main{
 
 
 }
+.nav-scroller__a,
+.nav-scroller__a.text:active,
+.nav-scroller__a.text:hover {text-decoration: none;
+    color: #7E7E82;}
+
+
 .nav-scroller__item {
     color: #424242;
     display: flex;
@@ -229,11 +258,13 @@ main{
     text-decoration: none;
     border: 2px solid #F8F8F8;
     border-radius: 6px;
+
 }
 .nav-scroller__item:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: white;
+    cursor: pointer;
 }
 .nav-scroller__items::-webkit-scrollbar {
     display: none;
@@ -245,8 +276,6 @@ main{
     font-family: 'TT Lakes', "Arial", sans-serif;
     margin-left: 40px;
     font-weight: 500;
-    width: 120px;
-    height: 24px;
     font-size: 16px;
     letter-spacing: -0.2px;
     border-width:0;
@@ -266,6 +295,8 @@ main{
     background-repeat: no-repeat;
 }
 .content__text{
+    display: flex;
+    flex-direction: column;
     width: 288px;
     height: 90px;
     margin-left: 16px;
@@ -274,9 +305,11 @@ main{
     letter-spacing: 0.2px;
     color: #1B1C21;
     overflow: hidden;
+    gap: 35px;
+
 }
 .img{
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/cps.jpg?raw=true");
+
     width: 320px;
     height: 230px;
     background-repeat: no-repeat;
@@ -340,38 +373,46 @@ main{
         display: flex;
         justify-content: space-between;
     }
-    .desktop-menu{
-        align-items: flex-end;
-    }
     .button{
         margin-right: 5px;
     }
     .desktop-menu{
         display: flex;
-        order: 2;
         width: 800px;
         height: 60px;
         justify-content:flex-end;
-        align-items: center;
+        /*align-items: center;*/
+        align-items: flex-end;
+        gap: 40px;
     }
-    .desktop-menu-left{
+    .desktop-menu-block{
         display: flex;
-        align-items: center;
-        margin-right: 20px;
-        margin-top: 30px;
-        font-weight: 600;
-    }
-    .desktop-menu-right{
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-        font-weight: 600;
+        gap: 10px;
+
+        /*align-items: center;*/
+        /*margin-right: 20px;*/
+        /*margin-top: 30px;*/
+        /*font-weight: 600;*/
+        /*content: "w22w2";*/
+        /*height: 40px;*/
+        /*width: 40px;*/
+        /*background-color: #1B1C21;*/
+    /*}*/
+    /*.desktop-menu-right{*/
+    /*    display: flex;*/
+
+        /*align-items: center;*/
+        /*margin-top: 30px;*/
+        /*font-weight: 600;*/
     }
     .desktop-menu--text{
-        margin-right: 10px;
+        /*margin-right: 10px;*/
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
+        font-weight: 700;
+        background-color: #F8F8F8;
+        border-width: 0;
     }
     .h1{
         align-self: flex-end;
@@ -389,11 +430,14 @@ main{
     }
     .img{
         width: 531px;
-        height: 383px;
+        height: 283px;
         margin: 0;
         border-radius: 10px;
     }
     .h1::before{
         background-image:url("https://github.com/BITMMB/T3000/blob/master/img/highlight_desktop.svg?raw=true");
     }
+
+
+
 }

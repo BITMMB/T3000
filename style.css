@@ -61,7 +61,7 @@ p {margin: 0}
 }
 
 .header__logo{
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/logo.svg?raw=true");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/logo.svg?raw=true");
     width: 98px;
     height: 51px;
     margin-left: 20px;
@@ -87,7 +87,7 @@ p {margin: 0}
 
 .button__menu{
     display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/menu.svg?raw=true");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/menu.svg?raw=true");
     background-repeat:no-repeat;
     width: 18px;
     height: 16px;
@@ -95,7 +95,7 @@ p {margin: 0}
     }
 .button__keys{
     display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/keys.svg?raw=true");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/keys.svg?raw=true");
     background-repeat:no-repeat;
     width: 20px;
     height: 20px;
@@ -104,7 +104,7 @@ p {margin: 0}
 
 .button__search{
      display: flex;
-     background-image:url("https://github.com/BITMMB/T3000/blob/master/header/search.svg?raw=true");
+     background-image:url("https://github.com/BITMMB/T3000/blob/master/img/search.svg?raw=true");
      background-repeat:no-repeat;
      width: 16px;
      height: 20px;
@@ -112,7 +112,7 @@ p {margin: 0}
  }
 .button__phone{
     display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/phone.svg?raw=true");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/phone.svg?raw=true");
     background-repeat:no-repeat;
     width: 18px;
     height: 19px;
@@ -120,7 +120,7 @@ p {margin: 0}
 }
 .button__text{
     display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/text.svg?raw=true");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/text.svg?raw=true");
     background-repeat:no-repeat;
     width: 20px;
     height: 20px;
@@ -129,7 +129,7 @@ p {margin: 0}
 }
 .button__contacts{
     display: flex;
-    background-image:url("https://github.com/BITMMB/T3000/blob/master/header/contacts.svg?raw=true");
+    background-image:url("https://github.com/BITMMB/T3000/blob/master/img/contacts.svg?raw=true");
     background-repeat:no-repeat;
     width: 20px;
     height: 20px;

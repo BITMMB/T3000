@@ -1,24 +1,58 @@
 
-@font-face {
-    font-family: 'TTLakes-Bold';
-    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.woff') format('woff'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
+/*@font-face {*/
+/*    font-family: 'TT Lakes';*/
+/*    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot');*/
+/*    src: local('TT Lakes Bold'), local('TTLakes-Bold'),*/
+/*    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),*/
+/*    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.woff') format('woff'),*/
+/*    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'TT Lakes';*/
+/*    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot');*/
+/*    src: local('TT Lakes Regular'), local('TTLakes-Regular'),*/
+/*    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),*/
+/*    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.woff') format('woff'),*/
+/*    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.ttf') format('truetype');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+
 @font-face {
     font-family: 'TT Lakes';
-    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot');
+    src: url('/fonts/TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.woff') format('woff'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.ttf') format('truetype');
+    url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakes-Regular.woff') format('woff'),
+    url('/fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+    url('/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakes-Bold.woff') format('woff'),
+    url('/fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakesCondensed-Medium.eot');
+    src: local('TT Lakes Condensed Medium'), local('TTLakesCondensed-Medium'),
+    url('/fonts/TTLakesCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakesCondensed-Medium.woff') format('woff'),
+    url('/fonts/TTLakesCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 .body {
     font-family: 'TT Lakes', "Arial", sans-serif;
@@ -153,10 +187,9 @@ main{
     width:288px ;
     height: 40px;
     font-size: 28px;
-    font-weight:400;
     letter-spacing: -0.6px;
-    /*padding-left: 12px;*/
-    font-family: "TTLakes-Bold", "Arial", sans-serif;
+    font-family: "TT Lakes", "Arial", sans-serif;
+    font-weight: 700;
     margin-bottom: 0;
     margin-top: 24px;
 }
@@ -164,7 +197,6 @@ main{
 .h1::before{
     content: " ";
     position: relative;
-    /*top:17px;*/
     left:1px;
     right: 0;
     margin-right: 14px;
@@ -210,8 +242,9 @@ main{
 
 }
 .arrow{
+    font-family: 'TT Lakes', "Arial", sans-serif;
     margin-left: 40px;
-    font-weight: 400;
+    font-weight: 500;
     width: 120px;
     height: 24px;
     font-size: 16px;

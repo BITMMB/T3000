@@ -1,32 +1,33 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot');
+    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot?raw=true');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.woff') format('woff'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Regular.ttf') format('truetype');
+    url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakes-Regular.woff') format('woff'),
+    url('/fonts/TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot');
+    src: url('/fonts/TTLakes-Bold.eot');
     src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.woff') format('woff'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Bold.ttf') format('truetype');
+    url('/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakes-Bold.woff') format('woff'),
+    url('/fonts/TTLakes-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'TT Lakes';
-    src: url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Medium.eot');
+    src: url('/fonts/TTLakes-Medium.eot');
     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Medium.woff') format('woff'),
-    url('https://github.com/BITMMB/T3000/blob/master/fonts/TTLakes-Medium.ttf') format('truetype');
+    url('/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakes-Medium.woff') format('woff'),
+    url('/fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -236,6 +237,8 @@ main {
 }
 
 .content__text {
+    font-family: 'TT Lakes', "Arial", sans-serif;
+    font-weight: normal;
     display: flex;
     flex-direction: column;
     width: 288px;

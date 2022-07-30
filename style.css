@@ -22,11 +22,11 @@
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('/fonts/TTLakesCondensed-Medium.eot');
-    src: local('TT Lakes Condensed Medium'), local('TTLakesCondensed-Medium'),
-    url('/fonts/TTLakesCondensed-Medium.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/TTLakesCondensed-Medium.woff') format('woff'),
-    url('/fonts/TTLakesCondensed-Medium.ttf') format('truetype');
+    src: url('/fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTLakes-Medium.woff') format('woff'),
+    url('/fonts/TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -84,28 +84,24 @@ body {
     bottom: -10px;
 }
 
-.left-menu {
+.header__left-menu {
     display: flex;
     align-items: center;
     gap: 15px;
     justify-content: space-around;
 }
 
-.left-menu-fake {
+.header__medium-menu {
     display: none;
 }
 
-.medium-menu {
-    display: none;
-}
-
-.right-menu2 {
+.header__right-menu {
     display: flex;
     gap: 15px;
     justify-content: flex-end;
 }
 
-.right-menu2-hidden {
+.header__right-menu--hidden {
     display: none;
 }
 
@@ -113,7 +109,7 @@ button {
     cursor: pointer;
 }
 
-.button {
+.header__button {
     display: flex;
     background-color: #FF3E79;
     border-radius: 20px;
@@ -122,11 +118,11 @@ button {
     border-width: 0;
 }
 
-.button__icon {
+.header__button--icon {
     margin: auto
 }
 
-.desktop-menu {
+.header-desktop__menu {
     display: none;
 }
 
@@ -137,7 +133,6 @@ main {
     flex-direction: column;
     box-sizing: border-box;
     gap: 20px;
-
 }
 
 .h1 {
@@ -167,7 +162,6 @@ main {
     flex-wrap: nowrap;
     overflow-x: auto;
     white-space: nowrap;
-    /*margin-left: 16px;*/
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -175,6 +169,7 @@ main {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 .nav-scroller__a,
 .nav-scroller__a.text:active,
 .nav-scroller__a.text:hover {
@@ -206,15 +201,14 @@ main {
     display: none;
 }
 
-.arrowcont {
+.arrow-block {
     display: flex;
     justify-content: space-around;
     gap: 50px;
 }
 
-.arrow {
+.arrow-block__button {
     font-family: 'TT Lakes', "Arial", sans-serif;
-    /*margin-left: 40px;*/
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.2px;
@@ -223,7 +217,7 @@ main {
     background-color: #F8F8F8;
 }
 
-.arrow::before {
+.arrow-block__button::before {
     content: " ";
     position: relative;
     top: 17px;
@@ -236,15 +230,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.arrowlogo {
-    height: 11px;
-    width: 8px;
-    background-image: url("https://github.com/BITMMB/T3000/blob/master/img/arrows.svg?raw=true");
-    background-size: 8px 11px;
-    background-repeat: no-repeat;
-}
-
-.content__left {
+.content__left-column {
     flex-direction: column;
     display: flex;
 }
@@ -260,10 +246,10 @@ main {
     letter-spacing: 0.2px;
     color: #1B1C21;
     overflow: hidden;
-    gap: 30px;
+    gap: 31px;
 }
 
-.img {
+.img-logo {
 
     width: 320px;
     height: 230px;
@@ -272,15 +258,15 @@ main {
     background-size: 100%;
 }
 
-.header__left {
+.header__left-column {
     display: flex;
 }
 
-.header__right {
+.header__right-column {
     display: flex;
 }
 
-.right-menu2 {
+.header__right-menu {
     display: flex;
     gap: 16px;
 }
@@ -290,12 +276,12 @@ main {
         width: 769px;
     }
 
-    .right-menu2 {
+    .header__right-menu {
         gap: 16px;
         justify-content: space-between;
     }
 
-    .right-menu2-hidden {
+    .header__right-menu--hidden {
         display: block;
     }
 
@@ -303,25 +289,25 @@ main {
         justify-content: flex-end;
     }
 
-    .header__right {
+    .header__right-column {
         width: 50%;
         gap: 26px;
         justify-content: flex-end;
     }
 
-    .header__left {
+    .header__left-column {
         width: 50%;
         gap: 100px;
         justify-content: space-around;
     }
 
-    .left-menu {
+    .header__left-menu {
         display: flex;
         gap: 48px;
         justify-content: space-evenly;
     }
 
-    .medium-menu {
+    .header__medium-menu {
         display: flex;
         gap: 16px;
     }
@@ -353,7 +339,7 @@ main {
         margin-left: 24px;
     }
 
-    .img {
+    .img-logo {
         width: 360px;
         height: 208px;
         margin: 0;
@@ -370,7 +356,7 @@ main {
         padding-left: 20px;
     }
 
-    .content__left {
+    .content__left-column {
         margin-left: -20px;
     }
 
@@ -378,7 +364,7 @@ main {
         left: -24px;
     }
 
-    .right-menu2::before {
+    .header__right-menu::before {
         content: " ";
         position: relative;
         background-image: url("/img/border.svg?raw=true");
@@ -405,32 +391,32 @@ main {
         justify-content: space-between;
     }
 
-    .button {
+    .header__button {
         margin-right: 5px;
     }
 
-    .desktop-menu {
+    .header-desktop__menu {
         display: flex;
         width: 800px;
         height: 60px;
         justify-content: flex-end;
-        /*align-items: center;*/
         align-items: flex-end;
         gap: 40px;
     }
 
-    .desktop-menu-block {
+    .header-desktop__menu-block {
         display: flex;
         gap: 10px;
     }
 
-    .desktop-menu--text {
+    .header-desktop__menu-text {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        font-weight: 700;
         background-color: #F8F8F8;
         border-width: 0;
+        font-family: 'TT Lakes', "Arial", sans-serif;
+        font-weight: 500;
     }
 
     .h1 {
@@ -455,15 +441,20 @@ main {
         width: 490px;
         height: 160px;
         margin: 0;
+
     }
 
     .content {
         display: flex;
         justify-content: space-evenly;
-        /*gap: 33px;*/
+
     }
 
-    .img {
+    .arrow-block {
+        gap: 280px;
+    }
+
+    .img-logo {
         width: 531px;
         height: 283px;
         margin: 0;

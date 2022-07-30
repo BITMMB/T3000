@@ -148,6 +148,7 @@ main {
     content: " ";
     position: relative;
     left: -10px;
+    top:-5px;
     display: block;
     width: 4px;
     height: 40px;

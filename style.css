@@ -31,6 +31,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -42,102 +43,128 @@ body {
     background-color: #F8F8F8;
 }
 
-.body {
+.container {
     display: flex;
     margin: auto;
     flex-direction: column;
     width: 320px;
     box-sizing: border-box;
+
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+
 }
 
 .header {
     background-color: white;
     height: 88px;
-    width: 100%;
+
     display: flex;
     border-bottom: 1px solid #D9FFF5;
-    justify-content: space-around;
+
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
+    width: 100%;
+
+}
+
+.button {
+    display: flex;
+}
+
+.nav-header__left {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+
+
+}
+
+.nav-header__right {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
+
+.nav-header__right--menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-header__left--menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .header-desktop {
     display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding-top: 42px;
 }
 
-.header__logo {
-    background-image: url("https://github.com/BITMMB/T3000/blob/master/img/logo.svg?raw=true");
+.nav-header__logo {
+    background-image: url("img/logo.svg?raw=true");
     width: 98px;
     height: 51px;
+    background-repeat: no-repeat;
+    display: flex;
 }
 
-.header__logo::before {
+.nav-header__right--menu .button:nth-child(-n+3) {
+    display: none;
+}
+
+.nav-header__right--menu .button:nth-child(4)::before {
     content: " ";
     position: relative;
-    background-image: url("https://github.com/BITMMB/T3000/blob/master/img/border.svg?raw=true");
-    background-repeat: no-repeat;
     display: block;
     width: 2px;
     height: 32px;
-    left: 118px;
-    bottom: -10px;
-}
-
-.header__left-menu {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    justify-content: space-around;
-}
-
-.header__medium-menu {
-    display: none;
-}
-
-.header__right-menu {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-}
-
-.header__right-menu--hidden {
-    display: none;
+    border-right: 2px solid #EAEAEA;
+    left: -20px;
+    top: 5px;
 }
 
 button {
     cursor: pointer;
 }
 
-.header__button {
+.icon {
     display: flex;
     background-color: #FF3E79;
-    border-radius: 20px;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     border-width: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-.header__button--icon {
-    margin: auto
-}
-
-.header-desktop__menu {
-    display: none;
-}
-
-main {
+.main {
     background-color: #F8F8F8;
     width: 100%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    gap: 20px;
+    /*gap: 20px;*/
+    padding-top: 20px;
 }
 
-.h1 {
+.mission {
     display: flex;
-    width: 288px;
     font-size: 28px;
     letter-spacing: -0.6px;
     font-family: "TT Lakes", "Arial", sans-serif;
@@ -145,20 +172,19 @@ main {
     padding-left: 10px;
 }
 
-.h1::before {
+.mission::before {
     content: " ";
     position: relative;
     left: -10px;
-    top:-5px;
+    top: -2px;
     display: block;
-    width: 4px;
+    width: 0;
     height: 40px;
-    background-image: url("https://github.com/BITMMB/T3000/blob/master/img/highlight.svg?raw=true");
-    background-repeat: no-repeat;
+    border-right: 4px solid #41F6D7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-
-
-.nav-scroller__items {
+.nav__list {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -170,19 +196,18 @@ main {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
-.nav-scroller__a,
-.nav-scroller__a.text:active,
-.nav-scroller__a.text:hover {
+.nav__link,
+.nav__link.text:active,
+.nav__link.text:hover {
     text-decoration: none;
     color: #7E7E82;
 }
 
-.nav-scroller {
+.nav {
     padding-left: 12px
 }
 
-.nav-scroller__item {
+.nav__item {
     color: #424242;
     display: flex;
     padding: 8px 16px;
@@ -191,21 +216,21 @@ main {
     border-radius: 6px;
 }
 
-.nav-scroller__item:hover {
+.nav__item:hover {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: white;
     cursor: pointer;
 }
 
-.nav-scroller__items::-webkit-scrollbar {
+.nav__list::-webkit-scrollbar {
     display: none;
 }
 
-.arrow-block {
+.content {
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .arrow-block__button {
@@ -214,19 +239,19 @@ main {
     font-size: 16px;
     letter-spacing: -0.2px;
     border-width: 0;
-    padding: 0;
     background-color: #F8F8F8;
+    padding-left: 32px;
 }
 
 .arrow-block__button::before {
     content: " ";
     position: relative;
     top: 17px;
-    right: 22px;
+    right: 24px;
     display: block;
     width: 8px;
     height: 11px;
-    background-image: url("https://github.com/BITMMB/T3000/blob/master/img/arrows.svg?raw=true");
+    background-image: url("img/arrows.svg?raw=true");
     background-size: 8px 11px;
     background-repeat: no-repeat;
 }
@@ -234,31 +259,40 @@ main {
 .content__left-column {
     flex-direction: column;
     display: flex;
+    align-items: flex-start;
+    padding-left: 16px;
+}
+
+.content__block-text {
+
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    height: 90px;
+    font-size: 14px;
+    overflow: hidden;
+    gap: 31px;
 }
 
 .content__text {
     font-family: 'TT Lakes', "Arial", sans-serif;
     font-weight: normal;
-    display: flex;
-    flex-direction: column;
-    width: 288px;
-    height: 90px;
-    margin-left: 16px;
-    font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
-    overflow: hidden;
-    gap: 31px;
+
 }
 
-.img-logo {
+.logo-container {
+    display: flex;
 
     width: 320px;
     height: 230px;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    background-size: 100%;
+
+}
+
+.logo-container__img {
+    width: 100%;
 }
 
 .header__left-column {
@@ -274,115 +308,109 @@ main {
     gap: 16px;
 }
 
+.header-desktop__menu {
+    display: none;
+}
+
+.header-desktop {
+    margin: 0;
+    padding: 0;
+}
+
 @media (min-width: 768px) and (max-width: 1119px) {
-    .body {
+    .container {
         width: 769px;
     }
 
-    .header__right-menu {
-        gap: 16px;
-        justify-content: space-between;
+    .nav-header__right--menu .button:nth-child(-n+3) {
+        display: flex;
     }
 
-    .header__right-menu--hidden {
+    .nav-header__right--menu .button:nth-child(3) {
+        padding-right: 22px;
+    }
+
+    .nav-header__right {
+        padding-right: 24px;
+    }
+
+    .nav-header__left {
+        padding-left: 24px;
+    }
+
+    .nav-header__left--menu {
+        gap: 44px;
+    }
+
+    .nav-header__left--menu .button:first-child::after {
+        content: " ";
+        position: relative;
         display: block;
+        width: 2px;
+        height: 32px;
+        border-right: 2px solid #EAEAEA;
+        left: 20px;
+        top: 5px;
     }
 
-    .header {
-        justify-content: flex-end;
-    }
 
-    .header__right-column {
-        width: 50%;
-        gap: 26px;
-        justify-content: flex-end;
-    }
-
-    .header__left-column {
-        width: 50%;
-        gap: 100px;
-        justify-content: space-around;
-    }
-
-    .header__left-menu {
-        display: flex;
-        gap: 48px;
-        justify-content: space-evenly;
-    }
-
-    .header__medium-menu {
-        display: flex;
-        gap: 16px;
-    }
-
-    .right-menu {
-        /*gap: 24px;*/
-        justify-content: flex-end;
-    }
-
-    .header__logo {
-        margin-left: 0;
-    }
-
-    .h1 {
+    .mission {
         padding-left: 20px;
     }
 
-    .h1::before {
+    .mission::before {
         left: -20px;
     }
 
-    .nav-scroller {
+    .nav {
         padding-left: 24px
     }
 
-    .content__text {
+    .content__block-text {
         width: 312px;
         height: 160px;
-        margin-left: 24px;
     }
 
-    .img-logo {
+    .logo-container {
         width: 360px;
         height: 208px;
+    }
+
+    .logo-container__img {
+
         margin: 0;
         border-radius: 10px;
     }
 
     .content {
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row;
         gap: 48px;
     }
 
-    .h1__h1 {
-        padding-left: 20px;
-    }
-
     .content__left-column {
-        margin-left: -20px;
+        /*margin-left: -20px;*/
+        padding-left: 24px;
     }
 
     .header__logo::before {
         left: -24px;
     }
-
-    .header__right-menu::before {
-        content: " ";
-        position: relative;
-        background-image: url("https://github.com/BITMMB/T3000/blob/master/img/border.svg?raw=true");
-        background-repeat: no-repeat;
-        display: block;
-        width: 2px;
-        height: 32px;
-        left: -4px;
-        bottom: -5px;
-    }
 }
 
 @media (min-width: 1120px) {
-    .body {
+    .container {
         width: 1120px;
+
+    }
+
+    .mission {
+        padding-left: 33px;
+    }
+
+    .mission::before {
+        left: -33px;
+        /*border-top-right-radius: 5px%;*/
+        border-radius: 5px;
     }
 
     .header {
@@ -391,25 +419,62 @@ main {
 
     .header-desktop {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-    }
-
-    .header__button {
-        margin-right: 5px;
+        background-color: #F8F8F8;
+        padding-top: 42px;
     }
 
     .header-desktop__menu {
         display: flex;
-        width: 800px;
-        height: 60px;
+        /*height: 60px;*/
         justify-content: flex-end;
-        align-items: flex-end;
-        gap: 40px;
+        /*align-items: flex-end;*/
+        gap: 50px;
+        padding-right: 32px;
     }
 
-    .header-desktop__menu-block {
+    .header-desktop__menu-button {
         display: flex;
+        align-items: center;
         gap: 10px;
+        border-width: 0;
+        background-color: #F8F8F8;
+
+    }
+
+    .header-desktop__menu .header-desktop__menu-button:first-child::after {
+        content: "";
+        display: flex;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border-width: 0;
+        justify-content: center;
+        align-items: center;
+        background-image: url("img/keys.svg?raw=true");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position-x: 10px;
+        background-position-y: 10px;
+    }
+
+    .header-desktop__menu .header-desktop__menu-button:last-child::after {
+        content: "";
+        display: flex;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border-width: 0;
+        justify-content: center;
+        align-items: center;
+        background-image: url("img/search.svg?raw=true");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position-x: 10px;
+        background-position-y: 10px;
     }
 
     .header-desktop__menu-text {
@@ -422,51 +487,34 @@ main {
         font-weight: 500;
     }
 
-    .h1 {
-        align-self: flex-end;
-        padding-left: 33px;
-    }
-
-    .h1::before {
-        left: -33px;
-    }
-
-    .nav-scroller__items {
+    .nav__list {
         flex-wrap: wrap;
-
     }
 
-    .nav-scroller {
+    .nav {
         padding-left: 33px;
     }
 
-    .content__text {
+    .content__block-text {
         width: 490px;
         height: 160px;
         margin: 0;
-
     }
 
     .content {
         display: flex;
-        justify-content: space-evenly;
-
+        flex-direction: row;
+        gap: 30px;
     }
 
-    .arrow-block {
-        gap: 280px;
-    }
-
-    .img-logo {
+    .logo-container {
         width: 531px;
         height: 283px;
         margin: 0;
         border-radius: 10px;
     }
 
-    .h1::before {
-        background-image: url("https://github.com/BITMMB/T3000/blob/master/img/highlight_desktop.svg?raw=true");
+    .content__left-column {
+        padding-left: 34px;
     }
-
-
 }

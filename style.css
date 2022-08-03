@@ -502,4 +502,9 @@ button {
     .content__left-column {
         padding-left: 34px;
     }
+    .logo-container__img {
+
+        margin: 0;
+        border-radius: 10px;
+    }
 }

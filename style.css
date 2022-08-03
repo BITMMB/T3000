@@ -443,7 +443,9 @@ button {
 
     }
 
-    .header-desktop__menu .header-desktop__menu-button:first-child::after {
+    .header-desktop__menu .header-desktop__menu-button:first-child::after,
+    .header-desktop__menu .header-desktop__menu-button:last-child::after
+    {
         content: "";
         display: flex;
         background-color: #FF3E79;
@@ -454,23 +456,6 @@ button {
         justify-content: center;
         align-items: center;
         background-image: url("img/keys.svg?raw=true");
-        background-size: 20px 20px;
-        background-repeat: no-repeat;
-        background-position-x: 10px;
-        background-position-y: 10px;
-    }
-
-    .header-desktop__menu .header-desktop__menu-button:last-child::after {
-        content: "";
-        display: flex;
-        background-color: #FF3E79;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        border-width: 0;
-        justify-content: center;
-        align-items: center;
-        background-image: url("img/search.svg?raw=true");
         background-size: 20px 20px;
         background-repeat: no-repeat;
         background-position-x: 10px;

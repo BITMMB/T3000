@@ -382,8 +382,7 @@ button {
 .side-container {
     width: 320px;
     font-family: 'TT Lakes', "Arial", sans-serif;
-    border: 1px solid #667799;
-    box-shadow: -5px 0 20px 20px #dddee6;
+    box-shadow: 5px -30px 40px 20px #dddee6
 }
 * {
     padding: 0;
@@ -417,8 +416,10 @@ button {
     padding-top: 46px;
     list-style: none;
 }
-.side--main__nav-link,
-.side--main__nav-link.text:hover {
+.side--main__nav-link {
+    display: flex;
+    align-items: center;
+    height: 32px;
     text-decoration: none;
     font-family: inherit;
     font-weight: 500;
@@ -427,8 +428,20 @@ button {
     letter-spacing: -0.2px;
     color: #1B1C21;
 }
-.side-main__nav--item:active {
+.side--main__nav-link:hover {
     color: #7E7E82;
+    left: 4px;
+}
+.side--main__nav-link:hover::before {
+    content: " ";
+    display: flex;
+    position: relative;
+    left: -24px;
+    width: 0;
+    height: 40px;
+    border-right: 4px solid #41F6D7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .side-main__nav-bottom {
     display: flex;

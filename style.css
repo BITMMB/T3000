@@ -42,6 +42,7 @@ body {
     flex-direction: column;
     width: 320px;
     box-sizing: border-box;
+    gap: 20px;
 }
 .head {
     display: flex;
@@ -121,7 +122,6 @@ button {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding-top: 20px;
 }
 .header-desktop__mission {
     display: flex;
@@ -150,6 +150,7 @@ button {
     white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    gap: 5px;
 }
 .nav__link,
 .nav__link.text:active,
@@ -164,10 +165,8 @@ button {
     padding-left: 12px
 }
 .nav__item {
-    color: #424242;
     display: flex;
     padding: 8px 16px;
-    text-decoration: none;
     border: 2px solid #F8F8F8;
     border-radius: 6px;
 }
@@ -234,6 +233,9 @@ button {
     width: 320px;
     height: 230px;
     overflow: hidden;
+}
+.logo-container > img {
+    width: 100%;
 }
 .header__left-column {
     display: flex;

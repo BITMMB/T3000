@@ -378,30 +378,29 @@ button {
         padding-left: 34px;
     }
 }
-/*///////////*/
+/*//////SIDE/////*/
 .side-container {
     width: 320px;
     font-family: 'TT Lakes', "Arial", sans-serif;
-    box-shadow: 5px -30px 40px 20px #dddee6
-}
-* {
-    padding: 0;
-    margin: 0;
+    box-shadow: 5px -30px 40px 20px #dddee6;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 40px;
 }
 .side-header {
     display: flex;
+    width: 320px;
+}
+.side-header__nav {
     padding-top: 23px;
     padding-left: 24px;
     padding-right: 24px;
-}
-.side-header__nav {
     list-style: none;
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-.side-header__nav-left {
-    display: flex;
 }
 .side-header__nav-intro {
     display: flex;
@@ -421,7 +420,6 @@ button {
     align-items: center;
     height: 32px;
     text-decoration: none;
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -430,39 +428,40 @@ button {
 }
 .side--main__nav-link:hover {
     color: #7E7E82;
-    left: 4px;
+    position: relative;
+    left: -4px;
 }
 .side--main__nav-link:hover::before {
     content: " ";
     display: flex;
     position: relative;
-    left: -24px;
+    left: -20px;
     width: 0;
     height: 40px;
     border-right: 4px solid #41F6D7;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.side-main__nav-bottom {
+.side-contacts__buttons {
     display: flex;
     padding-left: 24px;
     gap: 16px;
     align-items: flex-end;
-    padding-bottom: 16px;
-    padding-top: 16px;
 }
-.side-footer {
+.side-contacts {
     flex-direction: column;
     display: flex;
-    gap: 40px;
+    gap: 16px;
+    position: relative;
+    bottom: 1vh;
 }
-.side-footer__contacts {
+.side-contacts__contacts {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding-left: 24px;
 }
-.side-footer__contacts-tel {
+.side-contacts__contacts-tel {
     font-weight: 700;
     font-family: inherit;
     font-size: 24px;
@@ -470,27 +469,25 @@ button {
     letter-spacing: -0.6px;
     color: #1B1C21;
 }
-.side-footer__lang {
+.side-contacts__lang {
     padding-left: 24px;
     display: flex;
     gap: 8px;
     padding-bottom: 32px;
-}
-.lang {
-    border: 0;
-    background-color: #F8F8F8;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-}
-.lang:focus {
-    color: #7E7E82;
+    padding-top: 24px;
 }
 .side-header__logo {
     width: 98px;
     height: 52px;
     display: flex;
 }
+.side-contacts__lang-pointer {
+    display: none;
+}
+.side-contacts__lang-label {
+    cursor: pointer;
+}
+.side-contacts__lang-pointer:checked + .side-contacts__lang-label {
+    color: #7E7E82;
+}
+

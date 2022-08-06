@@ -8,37 +8,38 @@
 </head>
 <body>
 <div class="side-container">
-    <div class="side-header">
-        <ul class="side-header__nav">
-            <li class="side-header__nav-left">
-                <ul class="side-header__nav-intro">
-                    <li class="button">
-                        <button class="icon">
-                            <img class="icon__picture"
-                                 src="img/close.svg?raw=true"
-                                 alt="Закрыть">
-                        </button>
-                    </li>
-                    <li class="side-header__logo">
-                        <a href="index.html">
-                            <img src="img/logo.svg?raw=true"
-                                 alt="Logo">
-                        </a>
-                    </li>
-
-                </ul>
-
-            </li>
-            <li class="button">
-                <button class="icon">
-                    <img class="icon__picture"
-                         src="img/magnifying.svg?raw=true"
-                         alt="Поиск">
-                </button>
-            </li>
-        </ul>
-    </div>
     <main class="side-main">
+        <div class="side-header">
+            <ul class="side-header__nav">
+                <li>
+                    <ul class="side-header__nav-intro">
+                        <li class="button">
+                            <button class="icon">
+                                <img class="icon__picture"
+                                     src="img/close.svg?raw=true"
+                                     alt="Закрыть">
+                            </button>
+                        </li>
+                        <li class="side-header__logo">
+                            <a href="index.html">
+                                <img src="img/logo.svg?raw=true"
+                                     alt="Logo">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="button">
+                    <button class="icon">
+                        <img class="icon__picture"
+                             src="img/magnifying.svg?raw=true"
+                             alt="Поиск">
+                    </button>
+                </li>
+            </ul>
+        </div>
+
         <ul class="side-main__nav">
             <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Ремонт техники</a></li>
             <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Услуги и сервисы</a></li>
@@ -49,7 +50,9 @@
             <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Наши сервисные центры</a></li>
             <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Контакты</a></li>
         </ul>
-        <ul class="side-main__nav-bottom">
+    </main>
+    <footer class="side-contacts">
+        <ul class="side-contacts__buttons">
             <li class="button">
                 <button class="icon">
                     <img class="icon__picture"
@@ -69,25 +72,25 @@
                          alt="Контакты">
                 </button>
         </ul>
-
-    </main>
-    <footer class="side-footer">
-        <div class="side-footer__contacts">
-        <span class="side-footer__contacts-mail">
+        <div class="side-contacts__contacts">
+        <span>
             mail@cps.com
         </span>
-            <span class="side-footer__contacts-tel">
+            <span class="side-contacts__contacts-tel">
             8 800 890 8900
         </span>
 
         </div>
-        <div class="side-footer__lang">
-            <button class="lang">RU</button>
-            <button class="lang">EN</button>
-            <button class="lang">CH</button>
+        <div class="side-contacts__lang">
+            <input type="radio" class="side-contacts__lang-pointer" id="ru" name="radio">
+            <label class="side-contacts__lang-label" for="ru">RU</label>
 
+            <input type="radio" class="side-contacts__lang-pointer" id="en" name="radio">
+            <label class="side-contacts__lang-label" for="en">EN</label>
+
+            <input type="radio" class="side-contacts__lang-pointer" id="ch" name="radio">
+            <label class="side-contacts__lang-label" for="ch">CH</label>
         </div>
-
     </footer>
 
 </div>

@@ -7,21 +7,19 @@
 
 </head>
 <body>
-<div class="side-container">
-    <main class="side-main">
+<aside class="side-container">
+    <div class="side-main">
         <div class="side-header">
             <ul class="side-header__nav">
                 <li>
                     <ul class="side-header__nav-intro">
-                        <li class="button">
+                        <li>
                             <button class="icon">
-                                <img class="icon__picture"
-                                     src="img/close.svg?raw=true"
-                                     alt="Закрыть">
+                                <img src="img/close.svg?raw=true" alt="Close">
                             </button>
                         </li>
-                        <li class="side-header__logo">
-                            <a href="index.html">
+                        <li>
+                            <a href="index.html" class="side-header__logo">
                                 <img src="img/logo.svg?raw=true"
                                      alt="Logo">
                             </a>
@@ -30,69 +28,61 @@
                     </ul>
 
                 </li>
-                <li class="button">
+                <li>
                     <button class="icon">
-                        <img class="icon__picture"
-                             src="img/magnifying.svg?raw=true"
-                             alt="Поиск">
+                        <img src="img/magnifying.svg?raw=true" alt="Search">
                     </button>
                 </li>
             </ul>
         </div>
 
         <ul class="side-main__nav">
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Ремонт техники</a></li>
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Услуги и сервисы</a></li>
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Корпоративным клиентам</a></li>
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Продавцам техники</a></li>
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Партнерам</a></li>
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Производителям</a></li>
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Наши сервисные центры</a></li>
-            <li class="side-main__nav--item"><a class="side--main__nav-link" href="#">Контакты</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Ремонт техники</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Услуги и сервисы</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Корпоративным клиентам</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Продавцам техники</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Партнерам</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Производителям</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Наши сервисные центры</a></li>
+            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Контакты</a></li>
         </ul>
-    </main>
-    <footer class="side-contacts">
+    </div>
+    <div class="side-contacts">
         <ul class="side-contacts__buttons">
-            <li class="button">
+            <li>
                 <button class="icon">
-                    <img class="icon__picture"
-                         src="img/phone.svg?raw=true"
-                         alt="Позвонить">
+                    <img src="img/phone.svg?raw=true" alt="Call">
                 </button>
-            <li class="button">
+            <li>
                 <button class="icon">
-                    <img class="icon__picture"
-                         src="img/text.svg?raw=true"
-                         alt="Отправить сообщение">
+                    <img src="img/text.svg?raw=true" alt="Send a message">
                 </button>
-            <li class="button">
+            <li>
                 <button class="icon">
-                    <img class="icon__picture"
-                         src="img/contacts.svg?raw=true"
-                         alt="Контакты">
+                    <img src="img/contacts.svg?raw=true" alt="Contacts">
                 </button>
         </ul>
         <div class="side-contacts__contacts">
-        <span>
+        <button>
             mail@cps.com
-        </span>
-            <span class="side-contacts__contacts-tel">
+        </button>
+            <button class="side-contacts__contacts-tel">
             8 800 890 8900
-        </span>
+        </button>
 
         </div>
-        <div class="side-contacts__lang">
-            <input type="radio" class="side-contacts__lang-pointer" id="ru" name="radio">
-            <label class="side-contacts__lang-label" for="ru">RU</label>
+        <div class="lang-switcher">
+            <input type="radio" class="lang-switcher__pointer" id="ru" name="radio">
+            <label class="lang-switcher__lang-label" for="ru">RU</label>
 
-            <input type="radio" class="side-contacts__lang-pointer" id="en" name="radio">
-            <label class="side-contacts__lang-label" for="en">EN</label>
+            <input type="radio" class="lang-switcher__pointer" id="en" name="radio">
+            <label class="lang-switcher__lang-label" for="en">EN</label>
 
-            <input type="radio" class="side-contacts__lang-pointer" id="ch" name="radio">
-            <label class="side-contacts__lang-label" for="ch">CH</label>
+            <input type="radio" class="lang-switcher__pointer" id="ch" name="radio">
+            <label class="lang-switcher__lang-label" for="ch">CH</label>
         </div>
-    </footer>
+    </div>
 
-</div>
+</aside>
 </body>
 </html>

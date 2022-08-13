@@ -491,4 +491,124 @@ button {
 .lang-switcher__pointer:checked + .lang-switcher__lang-label {
     color: #7E7E82;
 }
+/*//////Brand-block////*/
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.brand-title {
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    display: flex;
+    align-items: center;
+    color: #7E7E82;
+}
+.brand-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.brand-button {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 224px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-button:hover {
+    background-color: #dddee6;
+    transition-duration: 0.3s;
+}
+/*/////swiper/////*/
+.bbbbb{
 
+    width: 320px;
+    height: 234px;
+    border: 2px solid black;
+    padding-left: 16px;
+    gap: 16px;
+}
+/*.slider-container{*/
+
+/*    display: flex;*/
+/*    !*flex-direction: column;*!*/
+/*    width: 240px;*/
+/*    height: 72px;*/
+
+    /*justify-content: center;*/
+/*}*/
+
+
+
+
+
+
+/* swiper-bullets styling */
+
+/*.swiper-container{*/
+/*    width: 100%;*/
+/*}*/
+
+
+
+
+/*.swiper-pagination-bullet {*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    margin: 0 15px;*/
+/*    background-color: tomato;*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.swiper-pagination-bullet-active {*/
+/*    background-color: navy;*/
+/*}*/
+
+/*.swiper-button-prev,*/
+/*.swiper-button-next {*/
+/*    position: static;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.swiper-container {*/
+/*    padding-bottom: 50px;*/
+/*}*/
+
+/*.slider-container {*/
+/*    overflow: hidden;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.slider-container .swiper-wrapper {*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.card {*/
+/*    width: 20%;*/
+/*    margin-right: 2.5%;*/
+/*    margin-bottom: 2.5%;*/
+/*}*/
+
+/*@media (max-width: 600px) {*/
+/*    .card {*/
+/*        width: 100%;*/
+/*        margin: 0;*/
+/*        flex-shrink: 0;*/
+/*    }*/
+
+/*    .slider-container .swiper-wrapper {*/
+/*        justify-content: initial;*/
+/*        flex-wrap: nowrap;*/
+/*    }*/
+/*}*/

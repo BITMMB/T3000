@@ -27,9 +27,6 @@ function showMore() {
     if (brandHeight == '170px') {
         brandClass.style.height = 'auto';
         showMoreButton.textContent = 'Скрыть';
-        // showMoreButtonIcon.style.transform = 'rotate(180deg)';
-        // console.log(showMoreButtonIcon)
-        showMoreButton.classList.add('showmore-btn__rotate::before');
     } else {
         brandClass.style.height = '170px';
         showMoreButton.textContent = 'Показать все';

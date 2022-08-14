@@ -1,22 +1,12 @@
-// const swiper = new Swiper('.swiper', {
-//     direction: 'horizontal',
-//     loop: true,
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-//
-// });
-//
-//
-
-
 function initSlider() {
     new Swiper('.swiper', {
         direction: 'horizontal',
-        loop: true,
-        spaceBetween: 0,
+        loop: false,
+        spaceBetween: 170,
+        slidesPerView: 2,
         pagination: {
-            el: '.swiper-pagination'
+            el: '.swiper-pagination',
+            type: 'bullets',
         }
     })
 }
@@ -30,46 +20,26 @@ function detectWidth() {
 
 detectWidth();
 
+function showMore() {
+    let brandClass = document.querySelector('.brand-buttons');
+    let brandHeight = window.getComputedStyle(brandClass, null).getPropertyValue("height");
+    let showMoreButton = document.querySelector('.showmore-btn');
+    if (brandHeight == '170px') {
+        brandClass.style.height = 'auto';
+        showMoreButton.textContent = 'Скрыть';
+    } else {
+        brandClass.style.height = '170px';
+        showMoreButton.textContent = 'Показать все';
+        console.log(brandHeight)
+    }
+}
 
-//
-// let mySwiper;
-//
-//
-// function mobileSlider() {
-//     if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
-//         mySwiper = new Swiper(slider, {
-//             slidesPerView: 1,
-//             spaceBetween: 10,
-//             loop: true,
-//             slideClass: 'card',
-//             // pagination: {
-//             // 	el: '.swiper-pagination',
-//             // 	clickable: true,
-//             // },
-//         });
-//
-//         slider.dataset.mobile = 'true';
-//     }
-//
-//     if (window.innerWidth > 600) {
-//         slider.dataset.mobile = 'false';
-//         if (slider.classList.contains('swiper-container-initialized')) {
-//             mySwiper.destroy();
-//         }
-//     }
-// }
-//
-// mobileSlider()
-//
-// window.addEventListener('resize', () => {
-//     mobileSlider();
-// });
 
-//
-// const arr = [10, 12, 15, 21];
-// for (let i = 0; i < arr.length; i++) {
-//
-//     setTimeout(function () {
-//         console.log('Index: ' + i + ', element: ' + arr[i]);
-//     }, 2000);
-// }
+
+
+
+
+
+
+
+

@@ -1,15 +1,16 @@
-const slider = document.querySelector('.slider-container');
+let slider = document.querySelector('.swiper__container');
 let mySwiper;
 
 function mobileSlider() {
     if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
         mySwiper = new Swiper(slider, {
             slidesPerView: 2,
-            spaceBetween: 190,
+            spaceBetween: 200,
             loop: false,
-            slideClass: 'card',
+            allowTouchMove:true,
+            slideClass: 'swiper__container-slide',
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper__pagination',
                 clickable: true,
             },
         });
@@ -27,18 +28,17 @@ mobileSlider()
 window.addEventListener('resize', () => {
     mobileSlider();
 });
+let showMoreButton = document.querySelector('.showmore-btn')
+let brandClass = document.querySelector('ul:first-child')
 
 function showMore() {
-    let brandClass = document.querySelector('.swiper-wrapper');
     let brandHeight = window.getComputedStyle(brandClass, null).getPropertyValue("height");
     if (brandHeight == '170px') {
-        let showMoreButton = document.querySelector('.showmore-btn');
-        brandClass.classList.add('swiper-wrapper__height-auto');
+        brandClass.classList.add('swiper__container-wrapper__height-auto');
         showMoreButton.textContent = 'Скрыть';
         showMoreButton.className = 'showmore-btn__hide';
     } else {
-        let showMoreButton = document.querySelector('.showmore-btn__hide');
-        brandClass.className = 'swiper-wrapper';
+        brandClass.className = 'swiper__container-wrapper';
         showMoreButton.textContent = 'Показать все';
         showMoreButton.className = 'showmore-btn';
     }

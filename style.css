@@ -99,6 +99,7 @@ button {
   flex-direction: column;
   height: 100vh;
   gap: 40px;
+  z-index: 12;
   background-color: #fff; }
   @media (min-width: 1440px) {
     .side {
@@ -319,7 +320,7 @@ button {
 @media (min-width: 1440px) {
   .swiper__container-wrapper--heightBig {
     transition: height 500ms;
-    height: 500px; } }
+    height: 512px; } }
 
 .swiper-block {
   display: flex;
@@ -391,7 +392,7 @@ button.swiper-pagination-bullet {
       width: 224px; } }
 
 .swiper__container-button:hover {
-  border: 2px solid #ff3e79;
+  border: 1px solid #ff3e79;
   transition-duration: 0.3s; }
 
 .swiper__container-button:hover img:last-child {
@@ -418,7 +419,7 @@ button.swiper-pagination-bullet {
   grid-template-rows: 50% 50%; }
 
 .swiper__container-block--repair:hover {
-  border: 2px solid #ff3e79;
+  border: 1px solid #ff3e79;
   transition-duration: 0.3s; }
   .swiper__container-block--repair:hover img {
     scale: 1.2;
@@ -986,23 +987,23 @@ button.swiper-pagination-bullet {
       top: -14px; } }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .content__text-box > .showmore-btn {
+  .content__text-box .showmore-btn {
     top: 20px;
     left: 0px; } }
 
 @media (min-width: 1440px) {
-  .content__text-box > .showmore-btn {
+  .content__text-box .showmore-btn {
     top: 20px;
     left: 0px; } }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .content__text-box > .showmore-btn__hide {
-    top: 20px;
+  .content__text-box .showmore-btn__hide {
+    top: -10px;
     left: 0px; } }
 
 @media (min-width: 1440px) {
-  .content__text-box > .showmore-btn__hide {
-    top: 20px;
+  .content__text-box .showmore-btn__hide {
+    top: -10px;
     left: 0px; } }
 
 .showmore-btn::before {

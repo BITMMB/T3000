@@ -20,24 +20,28 @@ $shwMoreColor: #f8f8f8;
   }
 }
 
-.content__text-box > .showmore-btn {
-  @media (min-width: 768px) and (max-width: 1440px) {
-    top: 20px;
-    left: 0px;
-  }
-  @media (min-width: 1440px) {
-    top: 20px;
-    left: 0px;
+.content__text-box {
+  .showmore-btn {
+    @media (min-width: 768px) and (max-width: 1440px) {
+      top: 20px;
+      left: 0px;
+    }
+    @media (min-width: 1440px) {
+      top: 20px;
+      left: 0px;
+    }
   }
 }
-.content__text-box > .showmore-btn__hide {
-  @media (min-width: 768px) and (max-width: 1440px) {
-    top: 20px;
-    left: 0px;
-  }
-  @media (min-width: 1440px) {
-    top: 20px;
-    left: 0px;
+.content__text-box {
+  .showmore-btn__hide {
+    @media (min-width: 768px) and (max-width: 1440px) {
+      top: -10px;
+      left: 0px;
+    }
+    @media (min-width: 1440px) {
+      top: -10px;
+      left: 0px;
+    }
   }
 }
 

@@ -14,6 +14,7 @@ $lngChecked: #7e7e82;
   flex-direction: column;
   height: 100vh;
   gap: 40px;
+  z-index: 12;
   background-color: $bgColor;
 
   @media (min-width: 1440px) {

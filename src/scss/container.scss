@@ -93,6 +93,9 @@ body {
   z-index: 11;
   cursor: default;
 }
+.blurButton:active {
+  outline: none;
+}
 
 button {
   cursor: pointer;

@@ -1,0 +1,50 @@
+.lastoffer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  gap: 16px;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    padding-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 32px;
+  }
+}
+.lastoffer__button {
+  width: 192px;
+  display: flex;
+  flex-direction: row;
+  @media (min-width: 768px) {
+    width: 392px;
+  }
+}
+.lastoffer__text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    width: 421px;
+    padding-right: 0;
+  }
+}
+
+.lastoffer__buttontext {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+.lastoffer__buttontext::after {
+  content: '';
+  background-image: url('../img/row-go.svg');
+  width: 8px;
+  height: 12px;
+  display: block;
+  position: relative;
+  left: 115px;
+  bottom: 15px;
+  @media (min-width: 768px) {
+    left: 310px;
+  }
+}

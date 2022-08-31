@@ -1,0 +1,83 @@
+.content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    flex-direction: row;
+    gap: 48px;
+  }
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.content__text-box {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 16px;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    padding-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 34px;
+  }
+}
+
+.content__block-text {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 100px;
+  font-size: 14px;
+  overflow: hidden;
+  gap: 31px;
+  padding-top: 5px;
+  transition: height 500ms;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    width: 312px;
+    height: 160px;
+  }
+  @media (min-width: 1440px) {
+    width: 490px;
+    height: 160px;
+  }
+}
+
+.content__block-text--height {
+  height: 530px;
+  transition: height 500ms;
+  @media (min-width: 1440px) {
+    height: 380px;
+  }
+}
+
+.content__text {
+  font-family: 'TT Lakes', 'Arial', sans-serif;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.logo-container {
+  display: flex;
+  width: 320px;
+  height: 230px;
+  overflow: hidden;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    width: 360px;
+    height: 208px;
+    border-radius: 10px;
+  }
+  @media (min-width: 1440px) {
+    width: 531px;
+    height: 283px;
+    border-radius: 10px;
+  }
+}
+
+.logo-container > img {
+  width: 100%;
+}

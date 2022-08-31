@@ -1,23 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2afda981-367f-4186-8793-767c60f67a57" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/brand-section.html" beforeDir="false" afterPath="$PROJECT_DIR$/brand-section.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/swiper.min.js" afterDir="false" />
+    <list default="true" id="fbabf823-3e94-4b69-a532-67eef7a69705" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-section.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-section.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/TTLakes-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Subtract.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/arrows.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/border.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/acer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/apple.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/bosch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/hp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/lenovo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/samsung.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/brands/sony.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/checkstatus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/contacts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cps.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/highlight.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/highlight_desktop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/keys.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/magnifying.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/repair.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sidemenu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swiper.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,7 +59,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2DlFdV2qQaNP1wGDmzC1VxgeXmY" />
+  <component name="ProjectId" id="2DegUoYl7ZHi9RPqyr0RHAr1C8g" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,36 +69,32 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2afda981-367f-4186-8793-767c60f67a57" name="Changes" comment="" />
-      <created>1661265854565</created>
+      <changelist id="fbabf823-3e94-4b69-a532-67eef7a69705" name="Changes" comment="" />
+      <created>1661064985251</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1661265854565</updated>
-      <workItem from="1661265857269" duration="5000" />
-      <workItem from="1661268715179" duration="13992000" />
+      <updated>1661064985251</updated>
+      <workItem from="1661065006531" duration="8000" />
+      <workItem from="1661067911080" duration="2000" />
+      <workItem from="1661171306321" duration="591000" />
+      <workItem from="1661366419096" duration="3000" />
+      <workItem from="1661784194228" duration="158000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

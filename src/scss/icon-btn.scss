@@ -1,0 +1,38 @@
+.icon {
+  display: flex;
+  background-color: #ff3e79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-width: 0;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.icon:hover {
+  opacity: 50%;
+}
+.button-sideClose {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+.feedback__title-closebtn {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    top: -5px;
+    transition: 0s;
+  }
+}
+
+.feedback__title-closebtn--hide {
+  left: -110px;
+  opacity: 1;
+  opacity: 1;
+  transition: 0s;
+}

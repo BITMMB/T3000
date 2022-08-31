@@ -1,0 +1,137 @@
+$bgColor: #ffffff;
+$beforeObj: #41f6d7;
+$formBorder: #eaeaea;
+$plchTextColor: #b5b6bc;
+$footerTextColor: #7e7e82;
+$pink: #ff3e79;
+
+.feedback {
+  width: 320px;
+  padding: 24px 16px 16px 16px;
+  height: 100vh;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: fixed;
+  right: -320px;
+  transition: 500ms;
+  z-index: 12;
+  @media (min-width: 768px) {
+    width: 420px;
+    padding: 40px 32px 32px 32px;
+    right: -420px;
+    z-index: 12;
+  }
+}
+
+.callback {
+  width: 320px;
+  padding: 24px 16px 16px 16px;
+  height: 100vh;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: fixed;
+  right: -320px;
+  transition: 500ms;
+  z-index: 12;
+  @media (min-width: 768px) {
+    width: 420px;
+    padding: 40px 32px 32px 32px;
+    right: -420px;
+    z-index: 12;
+  }
+}
+
+.feedback__surfaced {
+  width: 320px;
+  padding: 24px 16px 16px 16px;
+  height: 100vh;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: fixed;
+  box-shadow: 5px -30px 40px 20px #bfc1c8;
+  z-index: 12;
+  right: 0;
+  transition: 500ms;
+  @media (min-width: 768px) {
+    width: 420px;
+    padding: 40px 32px 32px 32px;
+    right: 0;
+    z-index: 12;
+  }
+}
+
+.feedback__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.feedback__title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.feedback__title-text::before {
+  content: ' ';
+  position: absolute;
+  left: -16px;
+  top: 55px;
+  display: block;
+  width: 0;
+  height: 40px;
+  border-right: 4px solid $beforeObj;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  @media (min-width: 768px) {
+    left: -32px;
+    top: -5px;
+    border-radius: 5px;
+  }
+}
+.feedback__form-input {
+  height: 48px;
+  background: $bgColor;
+  border: 1px solid $formBorder;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+
+.feedback__form-input::placeholder {
+  color: $plchTextColor;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: -0.2px;
+}
+
+.feedback__form-textarea {
+  height: 118px;
+  resize: none;
+  padding: 16px;
+}
+.feedback__footer {
+  color: $footerTextColor;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.feedback__footer-link {
+  color: $pink;
+}

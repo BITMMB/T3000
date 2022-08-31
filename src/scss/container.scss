@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+    url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.eot');
+  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+    url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.eot');
+  src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+$bgColor: #f8f8f8;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'TT Lakes', 'Arial', sans-serif;
+  background-color: $bgColor;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+
+.container__main-content {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 320px;
+  box-sizing: border-box;
+  gap: 20px;
+  transition: 500ms;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    width: 769px;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 320px;
+    margin: 0;
+  }
+}
+
+.container__main-content__blur {
+  filter: blur(20px);
+  transition: 500ms;
+}
+
+.blurButton {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  z-index: 11;
+  cursor: default;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.main {
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 16px;
+}

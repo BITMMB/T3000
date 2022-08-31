@@ -1,3 +1,1 @@
-[# T3000
-First
-](https://bitmmb.github.io/T3000/)
+https://bitmmb.github.io/T3000/

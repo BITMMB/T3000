@@ -57,7 +57,6 @@ body {
 .container {
   display: flex;
   margin: 0 auto;
-  position: relative;
   @media (min-width: 1440px) {
     width: 1440px;
   }
@@ -68,9 +67,8 @@ body {
   margin: 0 auto;
   flex-direction: column;
   width: 320px;
-  box-sizing: border-box;
   gap: 20px;
-  transition: 500ms;
+
   @media (min-width: 768px) and (max-width: 1440px) {
     width: 769px;
   }
@@ -82,8 +80,7 @@ body {
 }
 
 .container__main-content__blur {
-  filter: blur(20px);
-  transition: 500ms;
+  filter: blur(2220px);
 }
 
 .blurButton {

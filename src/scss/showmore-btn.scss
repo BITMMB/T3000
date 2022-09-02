@@ -7,9 +7,9 @@ $shwMoreColor: #f8f8f8;
   letter-spacing: -0.2px;
   border-width: 0;
   background-color: shwMoreColor;
-  padding-left: 32px;
   display: block;
   position: relative;
+  left: 16px;
   @media (min-width: 768px) and (max-width: 1440px) {
     left: 24px;
     top: -14px;
@@ -23,24 +23,10 @@ $shwMoreColor: #f8f8f8;
 .content__text-box {
   .showmore-btn {
     @media (min-width: 768px) and (max-width: 1440px) {
-      top: 20px;
-      left: 0px;
+      left: 24px;
     }
     @media (min-width: 1440px) {
-      top: 20px;
-      left: 0px;
-    }
-  }
-}
-.content__text-box {
-  .showmore-btn__hide {
-    @media (min-width: 768px) and (max-width: 1440px) {
-      top: -10px;
-      left: 0px;
-    }
-    @media (min-width: 1440px) {
-      top: -10px;
-      left: 0px;
+      left: 24px;
     }
   }
 }
@@ -57,50 +43,19 @@ $shwMoreColor: #f8f8f8;
   background-size: 8px 11px;
   background-repeat: no-repeat;
 }
-
-.showmore-btn__hide {
-  font-family: 'TT Lakes', 'Arial', sans-serif;
-  position: relative;
-
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.2px;
-  border-width: 0;
-  background-color: shwMoreColor;
-  padding-left: 32px;
-  @media (min-width: 768px) and (max-width: 1440px) {
-    left: 24px;
-    top: -14px;
-  }
-  @media (min-width: 1440px) {
-    left: 32px;
-    top: -14px;
-  }
-}
-
 .showmore-btn__hide::before {
-  content: ' ';
-  position: relative;
-  top: 17px;
-  right: 24px;
-  display: block;
-  width: 8px;
-  height: 11px;
-  background-image: url('../img/arrows.svg');
-  background-size: 8px 11px;
-  background-repeat: no-repeat;
   transform: rotate(180deg);
 }
 
-.swiper__button > .showmore-btn {
+.swiper__button {
   display: none;
   @media (min-width: 768px) {
     display: block;
   }
 }
-.swiper__button > .showmore-btn__hide {
-  display: none;
-  @media (min-width: 768px) {
-    display: block;
+
+.mainCloseBtn {
+  @media (min-width: 1440px) {
+    display: none;
   }
 }

@@ -37,6 +37,11 @@ $textColor: #7e7e82;
     width: 330px;
   }
 }
+.footer-text:nth-child(2) {
+  text-align: center;
+  color: #7e7e82;
+}
+
 .footer-text:last-child {
   @media (min-width: 768px) {
     text-align: right;

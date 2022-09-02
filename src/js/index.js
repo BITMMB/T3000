@@ -22,6 +22,16 @@ Swiper.use([Pagination])
 // function Swipers ()
 
 //////////////////////////////////////////////////////////////////////
+
+// let swipers = document.querySelectorAll('.swiper__container')
+
+// console.log(swipers)
+
+// for (i = 0; i < swipers.length; i++){
+
+// }
+
+/////////////////////////
 mobileSlider()
 window.addEventListener('resize', function () {
   mobileSlider()
@@ -101,7 +111,7 @@ showMoreButton1.addEventListener('click', function () {
   if (brandClass.className == 'content__block-text') {
     brandClass.classList.add('content__block-text--height')
     showMoreButton1.textContent = 'Скрыть'
-    showMoreButton1.className = 'showmore-btn__hide'
+    showMoreButton1.classList.add('showmore-btn__hide')
   } else {
     brandClass.className = 'content__block-text'
     showMoreButton1.textContent = 'Читать далее'
@@ -113,7 +123,7 @@ showMoreButton2.addEventListener('click', function () {
   if (brandClass.className == 'swiper__container-wrapper showMoreButton2') {
     brandClass.classList.add('swiper__container-wrapper--height')
     showMoreButton2.textContent = 'Скрыть'
-    showMoreButton2.className = 'showmore-btn__hide'
+    showMoreButton2.classList.add('showmore-btn__hide')
   } else {
     brandClass.className = 'swiper__container-wrapper showMoreButton2'
     showMoreButton2.textContent = 'Показать все'
@@ -125,7 +135,7 @@ showMoreButton3.addEventListener('click', function () {
   if (brandClass.className == 'swiper__container-wrapper showMoreButton3') {
     brandClass.classList.add('swiper__container-wrapper--heightBig')
     showMoreButton3.textContent = 'Скрыть'
-    showMoreButton3.className = 'showmore-btn__hide'
+    showMoreButton3.classList.add('showmore-btn__hide')
   } else {
     brandClass.className = 'swiper__container-wrapper showMoreButton3'
     showMoreButton3.textContent = 'Показать все'
@@ -153,6 +163,7 @@ function OpenMessForm() {
   blurClass.classList.add('container__main-content__blur')
   buttonClose3.classList.add('feedback__title-closebtn--hide')
   mainCloseBtn.classList.add('blurButton')
+  sideMenu.className = 'side'
 }
 
 let callBackPopup = document.querySelector('.callback')
@@ -166,6 +177,7 @@ function OpenCallForm() {
   blurClass.classList.add('container__main-content__blur')
   buttonClose4.classList.add('feedback__title-closebtn--hide')
   mainCloseBtn.classList.add('blurButton')
+  sideMenu.className = 'side'
 }
 
 let buttonSideClose = document.querySelectorAll('.closeBtn')

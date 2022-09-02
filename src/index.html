@@ -16,87 +16,81 @@
   <div class="container">
     <button class='mainCloseBtn closeBtn'></button>
     <aside class="side">
-      <div class="side-container">
-        <div class="side-main">
-          <div class="side-header">
-            <ul class="side-header__nav">
-              <li>
-                <ul class="side-header__nav-intro">
-                  <li>
-                    <button class="icon closeBtn button-sideClose">
-                      <img src="img/close.svg" alt="Close">
-                    </button>
-                  </li>
-                  <li>
-                    <a href="index.html" class="side-header__logo">
-                      <img src="img/logo.svg" alt="Logo">
-                    </a>
-                  </li>
-
-                </ul>
-
-              </li>
-              <li>
-                <button class="icon">
-                  <img src="img/magnifying.svg" alt="Search">
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <ul class="side-main__nav">
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Ремонт техники</a>
-            </li>
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Услуги и сервисы</a>
-            </li>
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Корпоративным
-                клиентам</a></li>
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Продавцам техники</a>
-            </li>
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Партнерам</a></li>
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Производителям</a>
-            </li>
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Наши сервисные
-                центры</a></li>
-            <li class="side-main__nav-item"><a class="side__link" href="#" onclick="return false;">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="side-contacts">
-          <ul class="side-contacts__buttons">
+      <div class="side__top">
+        <div class="side-header">
+          <ul class="side-header__nav">
             <li>
-              <button class="icon callBtn">
-                <img src="img/phone.svg" alt="Call">
-              </button>
-            <li>
-              <button class="icon sendMesBth">
-                <img src="img/text.svg" alt="Send a message">
-              </button>
+              <ul class="side-header__nav-intro">
+                <li>
+                  <button class="icon closeBtn button-sideClose">
+                    <img src="img/close.svg" alt="Close">
+                  </button>
+                </li>
+                <li>
+                  <a href="index.html" class="side-header__logo">
+                    <img src="img/logo.svg" alt="Logo">
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li>
               <button class="icon">
-                <img src="img/contacts.svg" alt="Contacts">
+                <img src="img/magnifying.svg" alt="Search">
               </button>
+            </li>
           </ul>
-          <div class="side-contacts__contacts">
-            <button>
-              mail@cps.com
+        </div>
+        <ul class="side-main__nav">
+          <li class="side-main__nav-item"><a class="side__link" href="#">Ремонт техники</a>
+          </li>
+          <li class=" side-main__nav-item"><a class="side__link" href="#">Услуги и сервисы</a>
+          </li>
+          <li class=" side-main__nav-item"><a class="side__link" href="#">Корпоративным
+              клиентам</a></li>
+          <li class=" side-main__nav-item"><a class="side__link" href="#">Продавцам техники</a>
+          </li>
+          <li class=" side-main__nav-item"><a class="side__link" href="#">Партнерам</a></li>
+          <li class=" side-main__nav-item"><a class="side__link" href="#">Производителям</a>
+            центры</a></li>
+          <li class=" side-main__nav-item"><a class="side__link" href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class=" side__bottom">
+        <ul class="side__bottom-buttons">
+          <li>
+            <button class="icon callBtn">
+              <img src="img/phone.svg" alt="Call">
             </button>
-            <button class="side-contacts__contacts-tel">
-              8 800 890 8900
+          <li>
+            <button class="icon sendMesBth">
+              <img src="img/text.svg" alt="Send a message">
             </button>
+          <li>
+            <button class="icon">
+              <img src="img/contacts.svg" alt="Contacts">
+            </button>
+        </ul>
+        <div class="side__bottom-contacts">
+          <button>
+            mail@cps.com
+          </button>
+          <button class="side__bottom-contactstel">
+            8 800 890 8900
+          </button>
 
-          </div>
-          <div class="lang-switcher">
-            <input type="radio" class="lang-switcher__pointer" id="ru" name="radio">
-            <label class="lang-switcher__lang-label" for="ru">RU</label>
+        </div>
+        <div class="lang-switcher">
+          <input type="radio" class="lang-switcher__pointer" id="ru" name="radio" checked>
+          <label class="lang-switcher__lang-label" for="ru">RU</label>
 
-            <input type="radio" class="lang-switcher__pointer" id="en" name="radio">
-            <label class="lang-switcher__lang-label" for="en">EN</label>
+          <input type="radio" class="lang-switcher__pointer" id="en" name="radio">
+          <label class="lang-switcher__lang-label" for="en">EN</label>
 
-            <input type="radio" class="lang-switcher__pointer" id="ch" name="radio">
-            <label class="lang-switcher__lang-label" for="ch">CH</label>
-          </div>
+          <input type="radio" class="lang-switcher__pointer" id="ch" name="radio">
+          <label class="lang-switcher__lang-label" for="ch">CH</label>
         </div>
       </div>
+      <!-- </div> -->
 
     </aside>
     <div class="feedback">
@@ -126,7 +120,6 @@
             </button>
         </form>
       </div>
-
     </div>
     <div class="callback">
       <div class="feedback__container">
@@ -137,10 +130,7 @@
           <h2 class="feedback__title-text">Заказать звонок</h2>
         </div>
         <form class="feedback__form" method="post">
-
           <input type="tel" name="tel" class="feedback__form-input" placeholder="Телефон">
-
-
           <div class="feedback__footer">
             <div class="feedback__footer-text">
               Нажимая “отправить”, вы даете согласие на<a class="feedback__footer-link">
@@ -153,13 +143,10 @@
             </button>
         </form>
       </div>
-
     </div>
     <div class="container__main-content ">
-
-
-      <header class="head">
-        <nav class="header">
+      <header class="header">
+        <nav class="header-container">
           <ul class="nav-header">
             <li class="nav-header__item">
               <ul class="nav-header__sublist">
@@ -206,18 +193,16 @@
             </li>
           </ul>
         </nav>
-        <div class="header-desktop">
-          <h1 class="header-desktop__mission">Услуги и сервисы</h1>
-          <div class="header-desktop__menu">
-            <button class="header-desktop__menu-button">
-              <span class="header-desktop__menu-text">Оставить заявку</span>
-              <img src="img/repair.svg" alt="Оставить заявку" />
-            </button>
-            <button class="header-desktop__menu-button">
-              <span class="header-desktop__menu-text">Статус ремонта</span>
-              <img src="img/checkstatus.svg" alt="Статус ремонта" />
-            </button>
-          </div>
+        <h1 class="header__heading">Услуги и сервисы</h1>
+        <div class="header-desktop__menu">
+          <button class="icon">
+            <img src="img/keys.svg" alt="Submit a request" />
+            <span class="header-desktop__menu-text">Оставить заявку</span>
+          </button>
+          <button class="icon">
+            <img src="img/search.svg" alt="Статус ремонта" />
+            <span class="header-desktop__menu-text">Оставить заявку</span>
+          </button>
         </div>
         <nav class="nav">
           <ul class="nav__list">
@@ -231,8 +216,7 @@
         </nav>
       </header>
       <main class="main">
-
-        <section class="content">
+        <section class="brand-section brand-section--textContent">
           <div class="content__text-box">
             <div class="content__block-text">
               <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники
@@ -262,99 +246,113 @@
           </div>
         </section>
         <section class="brand-section">
-          <div class="brand-section__container">
-            <h2 class="brand-section__title">
-              РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЭНДОВ</h2>
-            <div class='swiper-block'>
-              <div class="swiper__container mySwiper " data-mobile="false">
-                <ul class="swiper__container-wrapper showMoreButton2">
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/lenovo.svg" alt="lenovo" />
-                      <img src="img/brands/button.svg" alt="lenovo-button" />
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/acer.svg" alt="acer" />
-                      <img src="img/brands/button.svg" alt="acer-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/bosch.svg" alt="bosch" />
-                      <img src="img/brands/button.svg" alt="bosch-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/hp.svg" alt="hp" />
-                      <img src="img/brands/button.svg" alt="hp-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/apple.svg" alt="apple" />
-                      <img src="img/brands/button.svg" alt="apple-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/samsung.svg" alt="samsung" />
-                      <img src="img/brands/button.svg" alt="samsung-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/sony.svg" alt="sony" />
-                      <img src="img/brands/button.svg" alt="sony-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/lenovo.svg" alt="lenovo" />
-                      <img src="img/brands/button.svg" alt="lenovo-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/samsung.svg" alt="samsung" />
-                      <img src="img/brands/button.svg" alt="samsung-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/acer.svg" alt="acer" />
-                      <img src="img/brands/button.svg" alt="acer-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/lenovo.svg" alt="lenovo" />
-                      <img src="img/brands/button.svg" alt="lenovo-button" />
-                    </button>
-                  </li>
-                  <li class="swiper__container-slide">
-                    <button class="swiper__container-button">
-                      <img src="img/brands/apple.svg" alt="apple" />
-                      <img src="img/brands/button.svg" alt="apple-button" />
-                    </button>
-                  </li>
-                </ul>
-                <div class="swiper__pagination"></div>
-              </div>
-              <div class="swiper__button">
-                <button class="showmore-btn">
-                  Показать все
-                </button>
-              </div>
+
+          <h2 class="brand-section__title">
+            РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЭНДОВ</h2>
+          <div class='swiper__block'>
+            <div class="swiper__container mySwiper " data-mobile="false">
+              <ul class="swiper__container-wrapper showMoreButton2">
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+
+                    <img src="img/brands/lenovo.svg" alt="lenovo" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="lenovo-button" />
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+
+                    <img src="img/brands/acer.svg" alt="acer" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="acer-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/bosch.svg" alt="bosch" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="bosch-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/hp.svg" alt="hp" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="hp-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/apple.svg" alt="apple" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="apple-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/samsung.svg" alt="samsung" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="samsung-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/sony.svg" alt="sony" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="sony-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/lenovo.svg" alt="lenovo" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="lenovo-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/samsung.svg" alt="samsung" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="samsung-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/acer.svg" alt="acer" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="acer-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/lenovo.svg" alt="lenovo" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="lenovo-button" />
+                  </button>
+                </li>
+                <li class="swiper__container-slide">
+                  <button class="swiper__container-button">
+                    <img src="img/brands/apple.svg" alt="apple" />
+                    <a class="side__link" href="#"></a>
+                    <img src="img/brands/button.svg" alt="apple-button" />
+                  </button>
+                </li>
+              </ul>
+              <div class="swiper__pagination"></div>
+            </div>
+            <div class="swiper__button">
+              <button class="showmore-btn">
+                Показать все
+              </button>
             </div>
           </div>
+
         </section>
         <section class="brand-section">
           <div class="brand-section__container">
             <h2 class="brand-section__title">
               РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
-            <div class="swiper-block">
+            <div class="swiper__block">
               <div class="swiper__container mySwiper2 " data-mobile="false">
                 <ul class="swiper__container-wrapper showMoreButton3">
                   <li class="swiper__container-slide">
@@ -445,7 +443,7 @@
           <div class="brand-section__container">
             <h2 class="brand-section__title">
               ЦЕНЫ НА УСЛУГИ</h2>
-            <div class="swiper-block">
+            <div class="swiper__block">
               <div class="swiper__container mySwiper3" data-mobile="false">
                 <ul class="swiper__container-wrapper swiper__container-wrapper--line">
                   <li class=" swiper__container-slide--line">
@@ -641,31 +639,23 @@
               </div>
             </div>
           </div>
-
+          <div class="lastoffer">
+            <p class="lastoffer__text"> Все цены указаны с учетом НДС.
+              Стоимость ремонта указана на единичную услугу.
+              Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.
+            </p>
+            <button class="lastoffer__button"> <span class="lastoffer__buttontext">
+                Получить коммерческое предложение</span>
+            </button>
+          </div>
         </section>
-
-
-        <section class="lastoffer">
-          <span class="lastoffer__text"> Все цены указаны с учетом НДС.
-            Стоимость ремонта указана на единичную услугу.
-            Для получения коммерческого предложения на
-            постоянное обслуживание, оставьте заявку.
-          </span>
-          <button class="lastoffer__button"> <span class="lastoffer__buttontext">
-              Получить коммерческое предложение</span>
-
-
-          </button>
-        </section>
-
       </main>
-
       <footer class="footer">
-
-        <span class=footer-text>© 2019 CPS <br>
-          Разработано командой Apesong </span>
-        <span class=footer-text>Политика конфиденциальности</span>
-        <span class=footer-text>Информация, размещенная на данной странице, не является публичной офертой</span>
+        <p class=footer-text>© 2019 CPS <br>
+          Разработано командой Apesong </p>
+        <a class='footer-text' href="#">Политика конфиденциальности</a>
+        <p class=footer-text>Информация, размещенная на данной странице, не является публичной офертой</p>
       </footer>
     </div>
   </div>

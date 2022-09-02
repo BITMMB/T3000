@@ -11,12 +11,9 @@
   }
 }
 .lastoffer__button {
-  width: 192px;
   display: flex;
+  padding-right: 10px;
   flex-direction: row;
-  @media (min-width: 768px) {
-    width: 392px;
-  }
 }
 .lastoffer__text {
   font-size: 14px;

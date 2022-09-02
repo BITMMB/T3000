@@ -1,6 +1,10 @@
 $lincColor: #7e7e82;
 $navBorder: #f8f8f8;
 $navHover: #b8ffec;
+$lineColor: #d9fff5;
+$bcColor: #f8f8f8;
+$hdLineColor: #eaeaea;
+$beforeObjColor: #41f6d7;
 
 .nav__list {
   display: flex;
@@ -23,6 +27,7 @@ $navHover: #b8ffec;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: $lincColor;
+  padding: 8px 16px;
 }
 
 .nav {
@@ -37,7 +42,7 @@ $navHover: #b8ffec;
 
 .nav__item {
   display: flex;
-  padding: 8px 16px;
+
   border: 2px solid $navBorder;
   border-radius: 6px;
 }
@@ -51,4 +56,94 @@ $navHover: #b8ffec;
 
 .nav__list::-webkit-scrollbar {
   display: none;
+}
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header__item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header__sublist {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    gap: 16px;
+  }
+}
+
+.header-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $bcColor;
+    padding-top: 42px;
+  }
+}
+
+.nav-header__logo {
+  width: 98px;
+  height: 52px;
+  display: flex;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    padding-left: 22px;
+  }
+}
+
+.nav-header__sublist .button:nth-child(n + 2):nth-child(-n + 4) {
+  display: none;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    display: flex;
+  }
+}
+
+.nav-header__sublist .button:nth-child(3) {
+  @media (min-width: 768px) and (max-width: 1440px) {
+    padding-right: 22px;
+  }
+}
+
+.nav-header__sublist .button:nth-child(5)::before {
+  content: ' ';
+  position: relative;
+  display: block;
+  width: 2px;
+  height: 32px;
+  border-right: 2px solid $hdLineColor;
+  left: -75px;
+}
+.nav-header__sublist .nav-header__logo::after {
+  @media (min-width: 768px) and (max-width: 1440px) {
+    content: ' ';
+    position: relative;
+    display: block;
+    width: 2px;
+    height: 32px;
+    border-right: 2px solid $hdLineColor;
+    right: 115px;
+    top: 10px;
+  }
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  @media (min-width: 768px) and (max-width: 1440px) {
+    justify-content: space-between;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
